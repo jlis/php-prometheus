@@ -30,6 +30,14 @@ class AdapterFactoryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf($expected, $this->factory->make($type));
     }
 
+    public function testAddWithClassName()
+    {
+        $adapter = $this->factory->add('stub', new InMemoryAdapter());
+
+        $this->assertInstanceOf(InMemoryAdapter::class, $adapter);
+        $this->assertInstanceOf(InMemoryAdapter::class, $this->factory->make('stub'));
+    }
+
     /**
      * @return array
      */

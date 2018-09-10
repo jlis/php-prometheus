@@ -20,6 +20,8 @@ final class AdapterFactory
     /**
      * @param string $type
      * @param string|AbstractAdapter
+     *
+     * @return AbstractAdapter
      */
     public function add($type, $adapter)
     {
@@ -32,6 +34,8 @@ final class AdapterFactory
         }
 
         $this->adapters[$type] = $adapter;
+
+        return $adapter;
     }
 
     /**
