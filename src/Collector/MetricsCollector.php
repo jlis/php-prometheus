@@ -11,6 +11,8 @@ use Prometheus\RenderTextFormat;
  */
 class MetricsCollector
 {
+    const MIME_TYPE = RenderTextFormat::MIME_TYPE;
+
     /**
      * @var CollectorRegistry
      */
@@ -102,13 +104,5 @@ class MetricsCollector
         $this->adapter->flush();
 
         return $metrics;
-    }
-
-    /**
-     * @return string
-     */
-    public function getContentType()
-    {
-        return RenderTextFormat::MIME_TYPE;
     }
 }
