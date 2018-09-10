@@ -27,7 +27,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url":  "git@github.com:jlis/prometheus_client_php.git"
+            "url":  "https://github.com/jlis/prometheus_client_php.git"
         }
     ],
     "require": {
