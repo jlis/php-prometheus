@@ -2,8 +2,6 @@
 
 namespace Jlis\PhpPrometheus\Adapter;
 
-use Prometheus\Storage\InMemory;
-
 /**
  * @author Julius Ehrlich <julius@billomat.com>
  */
