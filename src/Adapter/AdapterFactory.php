@@ -28,11 +28,11 @@ final class AdapterFactory
     public function add($type, $adapter)
     {
         if (is_string($adapter) && class_exists($adapter)) {
-            $adapter = new $adapter;
+            $adapter = new $adapter();
         }
 
         if (!$adapter instanceof AbstractAdapter) {
-            throw new \RuntimeException('Invalid metric adapter given: ' . gettype($adapter));
+            throw new \RuntimeException('Invalid metric adapter given: '.gettype($adapter));
         }
 
         $this->adapters[$type] = $adapter;

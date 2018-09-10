@@ -25,7 +25,7 @@ class MetricsCollector
     private $adapter;
 
     /**
-     * @param AbstractAdapter $adapter
+     * @param AbstractAdapter        $adapter
      * @param CollectorRegistry|null $registry
      */
     public function __construct(AbstractAdapter $adapter, CollectorRegistry $registry = null)
@@ -46,8 +46,8 @@ class MetricsCollector
 
     /**
      * @param string $metric
-     * @param int $value
-     * @param array $labels
+     * @param int    $value
+     * @param array  $labels
      *
      * @return MetricsCollector
      */
@@ -61,8 +61,8 @@ class MetricsCollector
 
     /**
      * @param string $metric
-     * @param float $value
-     * @param array $labels
+     * @param float  $value
+     * @param array  $labels
      *
      * @return MetricsCollector
      */
@@ -75,9 +75,9 @@ class MetricsCollector
     }
 
     /**
-     * @param string $metric
-     * @param float $value
-     * @param array $labels
+     * @param string     $metric
+     * @param float      $value
+     * @param array      $labels
      * @param array|null $buckets
      *
      * @return MetricsCollector

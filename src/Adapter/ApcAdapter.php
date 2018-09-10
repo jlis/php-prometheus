@@ -22,4 +22,3 @@ class ApcAdapter extends AbstractAdapter
         $this->adapter->flushAPC();
     }
 }
-
