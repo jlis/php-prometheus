@@ -16,9 +16,7 @@ final class AdapterFactory
 
     public function __construct()
     {
-        $this->add('memory', InMemory::class);
-        $this->add('apcu', ApcAdapter::class);
-        $this->add('redis', RedisAdapter::class);
+        $this->add('memory', InMemoryAdapter::class);
     }
 
     /**
