@@ -1,0 +1,21 @@
+{
+    "name": "jlis/php-prometheus",
+    "description": "A PHP client for Prometheus.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julius Ehrlich",
+            "email": "julius@ehrlich-bros.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jlis\\PhpPrometheus\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6"
+    }
+}
