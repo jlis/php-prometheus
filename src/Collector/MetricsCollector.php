@@ -39,11 +39,13 @@ class MetricsCollector
     /**
      * @param string $namespace
      *
-     * @return void
+     * @return MetricsCollector
      */
     public function setNamespace($namespace)
     {
         $this->namespace = $namespace;
+
+        return $this;
     }
 
     /**
