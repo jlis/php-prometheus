@@ -7,6 +7,10 @@
         {
             "name": "Julius Ehrlich",
             "email": "julius@ehrlich-bros.de"
+        },
+        {
+            "name": "Julius Ehrlich",
+            "email": "julius@billomat.com"
         }
     ],
     "autoload": {
