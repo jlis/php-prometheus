@@ -88,8 +88,13 @@ class MetricsCollector
      */
     public function updateHistogram($metric, $value, array $labels = [], $buckets = null)
     {
-        $histogram = $this->registry->getOrRegisterHistogram($this->namespace, $metric, null, array_keys($labels),
-            $buckets);
+        $histogram = $this->registry->getOrRegisterHistogram(
+            $this->namespace,
+            $metric,
+            null,
+            array_keys($labels),
+            $buckets
+        );
         $histogram->observe($value, array_values($labels));
 
         return $this;
