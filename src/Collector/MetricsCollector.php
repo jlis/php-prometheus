@@ -33,7 +33,7 @@ class MetricsCollector
     public function __construct(AbstractAdapter $adapter, CollectorRegistry $registry = null)
     {
         $this->adapter = $adapter;
-        $this->registry = $registry ?: new CollectorRegistry($this->adapter->getAdapter());
+        $this->registry = $registry ?: new CollectorRegistry($this->adapter);
     }
 
     /**

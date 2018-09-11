@@ -2,7 +2,7 @@
 
 namespace Jlis\PhpPrometheus\Collector;
 
-use Jlis\PhpPrometheus\Adapter\AdapterFactory;
+use Jlis\PhpPrometheus\Adapter\InMemoryAdapter;
 use Prometheus\CollectorRegistry;
 use Prometheus\Counter;
 use Prometheus\Gauge;
@@ -27,7 +27,7 @@ class MetricsCollectorTest extends \PHPUnit_Framework_TestCase
         parent::setUp();
 
         $this->registry = $this->createMock(CollectorRegistry::class);
-        $this->collector = new MetricsCollector((new AdapterFactory())->make('memory'), $this->registry);
+        $this->collector = new MetricsCollector(new InMemoryAdapter(), $this->registry);
     }
 
     public function testIncrementCount()

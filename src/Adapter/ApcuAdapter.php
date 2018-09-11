@@ -3,16 +3,16 @@
 namespace Jlis\PhpPrometheus\Adapter;
 
 use Prometheus\MetricFamilySamples;
-use Prometheus\Storage\Redis;
+use Prometheus\Storage\APC;
 
 /**
  * @author Julius Ehrlich <julius@billomat.com>
  */
-class RedisAdapter extends AbstractAdapter
+class ApcuAdapter extends AbstractAdapter
 {
-    public function __construct(array $config = [])
+    public function __construct()
     {
-        $this->adapter = new Redis($config);
+        $this->adapter = new APC();
     }
 
     /**
@@ -20,12 +20,11 @@ class RedisAdapter extends AbstractAdapter
      */
     public function flush()
     {
-        $this->adapter->flushRedis();
+        $this->adapter->flushAPC();
     }
 
     /**
      * @return MetricFamilySamples[]
-     * @throws \Prometheus\Exception\StorageException
      */
     public function collect()
     {

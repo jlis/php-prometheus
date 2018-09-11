@@ -8,11 +8,6 @@ php:
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
 
-## Cache composer
-cache:
-  directories:
-  - $HOME/.composer/cache
-
 before_script:
 - travis_retry composer update --no-interaction --prefer-dist
 

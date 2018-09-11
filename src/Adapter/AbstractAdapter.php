@@ -9,7 +9,7 @@ use Prometheus\Storage\Adapter;
  *
  * @property Adapter $adapter
  */
-abstract class AbstractAdapter
+abstract class AbstractAdapter implements Adapter
 {
     /**
      * @return void
