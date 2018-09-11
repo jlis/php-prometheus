@@ -36,7 +36,7 @@ class InMemoryAdapter extends AbstractAdapter
      */
     public function updateHistogram(array $data)
     {
-        $this->adapter->updateGauge($data);
+        $this->adapter->updateHistogram($data);
     }
 
     /**
