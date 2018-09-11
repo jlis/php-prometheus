@@ -8,6 +8,9 @@ php:
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
 
+before_install:
+- composer config -g github-oauth.github.com "$GITHUB_TOKEN"
+
 before_script:
 - travis_retry composer update --no-interaction --prefer-dist
 
