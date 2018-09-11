@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4457e8db039c3775ded9f4eab66cb6e3",
+    "content-hash": "885a0fca19d2b37167c96832ca74bd73",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -194,12 +194,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jlis/prometheus_client_php.git",
-                "reference": "eeb84d25f9fec3c64ee3ed190a254163f3107b26"
+                "reference": "c8790d36ea160b023af50d3cbb813b357caf0ef3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jlis/prometheus_client_php/zipball/eeb84d25f9fec3c64ee3ed190a254163f3107b26",
-                "reference": "eeb84d25f9fec3c64ee3ed190a254163f3107b26",
+                "url": "https://api.github.com/repos/jlis/prometheus_client_php/zipball/c8790d36ea160b023af50d3cbb813b357caf0ef3",
+                "reference": "c8790d36ea160b023af50d3cbb813b357caf0ef3",
                 "shasum": ""
             },
             "require": {
@@ -210,7 +210,7 @@
                 "phpunit/phpunit": "~5.7"
             },
             "suggest": {
-                "ext-apc": "Required if using APCu.",
+                "ext-apcu": "Required if using APCu.",
                 "ext-redis": "Required if using Redis."
             },
             "type": "library",
@@ -240,7 +240,7 @@
             "support": {
                 "source": "https://github.com/jlis/prometheus_client_php/tree/apcu"
             },
-            "time": "2018-08-28T08:31:33+00:00"
+            "time": "2018-09-11T07:57:37+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1783,7 +1783,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6"
+        "php": ">=5.6.3"
     },
     "platform-dev": []
 }
